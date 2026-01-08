@@ -4,27 +4,18 @@
     box-sizing: border-box;
 }
 
-header{
-    background-image: url(assets/header_img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;               
-    width: auto;
-}
-
 nav {
     position: fixed;
     top: 0;                
-    left: 450px;          
-    right: 450px;         
+    left: 400px;          
+    right: 400px;         
     z-index: 1000;         
     display: flex;
     justify-content: center; 
     align-items: center;     
-    gap: 40px;               
+    gap: 30px;               
     background-color: rgba(84, 83, 83, 0.5);
-    backdrop-filter: blur(10px); /* Fixed the comment syntax here */
+    backdrop-filter: blur(10px); 
     padding: 15px 0px 10px 0px;
     font-size: 1.5rem;
     color: white;
@@ -41,10 +32,55 @@ ul{
 
 ul a{
     text-decoration: none;
-    
+    color: white;
+}
+
+ul a:hover{
+    color: lightgrey;
+    text-decoration: underline;
 }
 
 article{
     height: 100vh;
     background-color: lightgray;
+}
+
+header{
+    background-image: url(assets/header_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;               
+    width: auto;
+}
+
+.home_page{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 200px;
+}
+
+.home_page h1, h2{
+    font-family: "baga", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.home_page img{
+    width: 300px;
+    border-radius: 0px 100px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.home_page p{
+    font-family: "scheme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 400px;
 }
