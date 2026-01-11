@@ -22,7 +22,7 @@ nav {
     border-radius: 0px 0px 50px 50px;
 }
 
-ul{
+header ul{
     list-style: none;
     float: right;
     display: flex;
@@ -30,7 +30,7 @@ ul{
     text-align: center;
 }
 
-ul a{
+header ul a{
     text-decoration: none;
     color: white;
 }
@@ -40,10 +40,7 @@ ul a:hover{
     text-decoration: underline;
 }
 
-article{
-    height: 100vh;
-    background-color: lightgray;
-}
+
 
 header{
     background-image: url(assets/header_img.jpg);
@@ -83,4 +80,160 @@ header{
     font-size: 1.2rem;
     line-height: 1.5;
     max-width: 400px;
+}
+
+#projects{
+    height: 180vh;
+    background-color: rgb(236, 236, 236);
+
+}
+
+#projects h2{
+    font-family: "baga", sans-serif;
+    font-weight: 700;
+    padding: 40px;
+    text-align: center;
+}
+
+.project_list p{
+    font-family: "scheme", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project_list h3{
+    font-family: "baga", sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project_item img{  
+    width: 300px;
+    border-radius: 20px;      
+}
+
+.project_item2 img{  
+    width: 750px;
+    border-radius: 20px;      
+}
+
+.project_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 400px;
+    padding: 0px 0px 0px 0px;
+    
+}
+.project_item, .project_item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why {
+    height: 30vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    text-align: center;
+}
+
+.why h3{
+    font-family: "baga", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.why p{
+    font-family: "scheme", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+.about_me {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.about_me > div {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+.about_me h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #2b2b2b;
+}
+
+
+.about_me h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #6c63ff;
+    margin: 8px 0 15px;
+    border-radius: 2px;
+}
+
+
+.about_me p {
+    
+    font-size: 1rem;
+    color: #444;
+}
+
+.about_me li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#about h2{
+    font-family: "baga", sans-serif;
+    font-weight: 700;
+    padding: 40px;
+    text-align: center;
+}
+
+#about p{
+    font-family: "scheme", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about li{
+    font-family: "scheme", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+#about strong{
+    font-weight: 600;
 }
